@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFNameDisplayApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFNameDisplayApp"
+        mc:Ignorable="d"
+        Title="Batman App" Height="550" Width="250" Icon="/the-batman-2022-movies-dc-comics-red-background-1920x1080-6775.jpg" WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize" Cursor="Hand">
+    <Border CornerRadius="1,1,1,1" Background="#FFFF1616">
+        <StackPanel>
+            <Image Source="/the-batman-2021-movies-dc-comics-black-background-5k-8k-1920x1080-2636.jpg" Height="158" Width="251" Stretch="Fill" HorizontalAlignment="Center"/>
+            <TextBlock Margin ="0 10" Text="Villians List" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian" FontSize="23" FontWeight="Bold" Foreground="Black"/>
+            <TextBox  x:Name="txtName" Padding="2" Width="230" BorderBrush="#FFB51919" Background="#FF37393E"/>
+            <Button x:Name="btnAdd" Click="ButtonAddName_Click"  Content="Add" Width="79" Background="#FFF90D0D" FontFamily="Algerian"/>
+            <ListBox FontFamily="Algerian" x:Name="lstNames" Width="249" Height="275" Margin="0 10" Background="White" BorderBrush="#FFECE310"/>
+        </StackPanel>
+    </Border>
+</Window>
